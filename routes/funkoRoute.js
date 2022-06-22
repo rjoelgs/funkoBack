@@ -27,6 +27,7 @@ router.get("/23", (req, res) => {
     } catch (error) {
       res.status(500).json({
         msg: "Error loading data from Database",
+        error
       });
     }
   });
